@@ -1,0 +1,25 @@
+#+TITLE: Django static CMS
+#+AUTHOR: John Herrlin
+
+Is a small and lightweigt CMS for Django.
+The only dependencie is Django.
+
+It could also be used together with Gunicorn if running in a
+production environment.
+
+As I write most of my documentation in Emacs Orgmode I can with ease
+export the documents to good looking HTML files.
+The idea came from [[https://github.com/Miserlou/Zappa-CMS][Miserlou/Zappa-CMS]].
+But as I dont write my documentation in Markdown i wanted something else.
+
+
+* Run
+
+#+BEGIN_SRC sh
+python app.py runserver
+#+END_SRC
+
+* Add pages
+
+Add new HTML pages inside the =pages/= directory and they will be show on the index page.
+No migrations, no database, nothing!
